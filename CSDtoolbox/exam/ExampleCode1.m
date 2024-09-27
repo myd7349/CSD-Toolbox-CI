@@ -28,15 +28,18 @@ D = textread('NR_C66_trr.dat');
 D = D';
 % ------------ Step 5 -----------------------------------------------------
 tic
-X = CSD (D, G, H);
+[X, Y] = CSD (D, G, H);
 toc
 X = X';
+Y = Y';
 figure;           % create new figure
 plot(X);
+figure;
 plot(X(:,[14 24]));
 D = D';
 figure;           % create new figure 
 plot(D);
+figure;
 plot(D(:,[14 24]));
 % ------------ Step 6 -----------------------------------------------------
 WriteMatrix2Text(X,'CSD_C66_trr.dat');
