@@ -40,3 +40,7 @@ plot(D);
 plot(D(:,[14 24]));
 % ------------ Step 6 -----------------------------------------------------
 WriteMatrix2Text(X,'CSD_C66_trr.dat');
+
+matFilePath = [mfilename('fullpath'), '.mat'];
+disp(['Save workspace variables: ', matFilePath]);
+save(matFilePath);
