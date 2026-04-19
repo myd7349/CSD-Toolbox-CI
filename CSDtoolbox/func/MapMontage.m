@@ -10,7 +10,7 @@
 %                              label 'lab', 2-D plane x-y coordinates 'xy',
 %                              and 3-D spherical angles 'theta' and 'phi'
 %        
-% Copyright (C) 2009 by Jürgen Kayser (Email: kayserj@pi.cpmc.columbia.edu)
+% Copyright (C) 2009 by JÃ¼rgen Kayser (Email: kayserj@pi.cpmc.columbia.edu)
 % GNU General Public License (http://www.gnu.org/licenses/gpl.txt)
 % Updated: $Date: 2009/05/14 14:10:00 $ $Author: jk $
 %   Fixed: $Date: 2010/07/19 15:39:00 $ $Author: jk $
@@ -31,7 +31,7 @@ head = [sin(t)*r + m/2+1; cos(t)*r + m/2+1]' - m/2;
 scrsz = get(0,'ScreenSize');
 d = min(scrsz(3:4)) / 2;
 set(gcf,'Position',[scrsz(3)/2 - d/2 scrsz(4)/2 - d/2 d d]); 
-whitebg('w');
+% whitebg('w');
 axes('position',[0 0 1 1]);
 set(gca,'Visible','off');
 line(head(:,1),head(:,2),'Color','k','LineWidth',1); 
